@@ -1,10 +1,10 @@
 import cv2
 
 video = cv2.VideoCapture("nvideo.mp4")
-print(video.isOpened())
+#print(video.isOpened())
 while True:
     ret,frame = video.read()
-    print(ret)
+#    print(ret)
     if not ret:
         break
     cv2.imshow("Video Frame", frame)
