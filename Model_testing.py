@@ -1,8 +1,8 @@
 from ultralytics import YOLO
 import cv2
 
-model = YOLO("yolov8x.pt")
-capture = cv2.VideoCapture("AirShow.mp4")
+model = YOLO("best.pt")
+capture = cv2.VideoCapture("hcopter1.mp4")
 
 while True:
     ret, frame = capture.read()
